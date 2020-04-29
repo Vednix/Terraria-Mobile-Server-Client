@@ -98,14 +98,14 @@ namespace Terraria.Localization
 
 		private void LoadFilesForCulture(GameCulture culture)
 		{
-			LoadLanguageFromFileText(File.ReadAllText("Localisation/" + "en-US" /*sorry*/ + "/" + "en-US" /*sorry*/ + ".json"));
-			LoadLanguageFromFileText(File.ReadAllText("Localisation/" + "en-US" /*sorry*/ + "/" + "en-US" /*sorry*/ + ".Game.json"));
-			LoadLanguageFromFileText(File.ReadAllText("Localisation/" + "en-US" /*sorry*/ + "/" + "en-US" /*sorry*/ + ".Items.json"));
-			LoadLanguageFromFileText(File.ReadAllText("Localisation/" + "en-US" /*sorry*/ + "/" + "en-US" /*sorry*/ + ".Legacy.json"));
-			LoadLanguageFromFileText(File.ReadAllText("Localisation/" + "en-US" /*sorry*/ + "/" + "en-US" /*sorry*/ + ".NPCs.json"));
-			LoadLanguageFromFileText(File.ReadAllText("Localisation/" + "en-US" /*sorry*/ + "/" + "en-US" /*sorry*/ + ".Projectiles.json"));
-			LoadLanguageFromFileText(File.ReadAllText("Localisation/" + "en-US" /*sorry*/ + "/" + "en-US" /*sorry*/ + ".Town.json"));
-			LoadLanguageFromFileText(File.ReadAllText("Localisation/" + "en-US" /*sorry*/ + "/" + "en-US" /*sorry*/ + ".Mobile.json"));
+			LoadLanguageFromFileText(File.ReadAllText("Localisation/" + culture.Name + "/" + culture.Name + ".json"));
+			LoadLanguageFromFileText(File.ReadAllText("Localisation/" + culture.Name + "/" + culture.Name + ".Game.json"));
+			LoadLanguageFromFileText(File.ReadAllText("Localisation/" + culture.Name + "/" + culture.Name + ".Items.json"));
+			LoadLanguageFromFileText(File.ReadAllText("Localisation/" + culture.Name + "/" + culture.Name + ".Legacy.json"));
+			LoadLanguageFromFileText(File.ReadAllText("Localisation/" + culture.Name + "/" + culture.Name + ".NPCs.json"));
+			LoadLanguageFromFileText(File.ReadAllText("Localisation/" + culture.Name + "/" + culture.Name + ".Projectiles.json"));
+			LoadLanguageFromFileText(File.ReadAllText("Localisation/" + culture.Name + "/" + culture.Name + ".Town.json"));
+			LoadLanguageFromFileText(File.ReadAllText("Localisation/" + culture.Name + "/" + culture.Name + ".Mobile.json"));
 		}
 
 		private static string ReadEmbeddedResource(string path)
